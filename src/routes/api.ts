@@ -10,6 +10,7 @@ router.get('/', (request: Request, response: Response, next: NextFunction) => {
     indexController.index(request, response, next);
 });
 
+
 // Documentation
 const documentaionBasicAuthMiddleware = new DocumentationBasicAuthMiddleware();
 router.use('/docs', [
